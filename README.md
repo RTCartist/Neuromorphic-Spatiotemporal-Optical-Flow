@@ -14,19 +14,86 @@ On the hardware side, atomically sharp interfaces in two-dimensional van der Waa
 
 ---
 
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8+
+- MATLAB (for running simulation code)
+- Anaconda or Miniconda (recommended for Python environment)
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/RTCartist/Neuromorphic-Spatiotemporal-Optical-Flow.git
+    cd Neuromorphic-Spatiotemporal-Optical-Flow
+    ```
+
+2.  **Create a Conda environment (recommended):**
+    ```bash
+    conda create -n neuro-flow python=3.8
+    conda activate neuro-flow
+    ```
+
+3.  **Install the required Python dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+---
+
+## Usage
+
+### Python Scripts
+
+The main Python scripts can be run directly from the command line. Before running, ensure the necessary datasets are in the `data/` directory and the pretrained `yolov8n.pt` model is in the root folder.
+
+**Example:**
+```bash
+python optical_flow_seg.py
+```
+You can modify the data paths and parameters at the top of each script to fit your needs.
+
+### MATLAB Simulation
+
+The MATLAB scripts in the `simulation/` directory can be used to simulate the synaptic transistor array's response to visual information. You can adjust the `base_folder` path and other parameters within the scripts to match your data.
+
+---
+
+## Google Colab Demo
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RTCartist/Neuromorphic-Spatiotemporal-Optical-Flow/blob/main/demo.ipynb)
+
+Click the badge above to launch an interactive demo of our project in Google Colab. This will allow you to run the code on a sample dataset without any local setup.
+
+---
+
+## Project Structure
+
+-   **`optical_flow_seg.py`**: Performs motion segmentation using neuromorphic optical flow. (Uses Farneback for velocity inference)
+-   **`optical_flow_ob.py`**: Implements object tracking based on the calculated optical flow. (Uses Farneback for velocity inference)
+-   **`optical_flow_prediction.py`**: Predicts future frames using optical flow. (Uses Farneback for velocity inference)
+-   **`flow_viz.py`**: A utility for visualizing optical flow fields.
+-   **`requirements.txt`**: A list of Python dependencies for this project.
+-   **`yolov8n.pt`**: Pre-trained YOLOv8 nano model weights.
+-   **`simulation/`**: MATLAB code to simulate the synapse array processing visual information.
+-   **`data/`**: Sample datasets for autodriving, drone flight, and grasping scenarios. More experimental data will be uploaded to Google Drive.
+-   **`codebase/`**: (Coming soon) Neuromorphic optical flow code that utilizes FlowFormer, GMFLow, and RAFT for velocity inference.
+-   **`rawresults/`**: Raw experimental results.
+
+---
+
 ## To Do
 
-1. **Set up the basic runtime environment**  
-   - Specify dependencies, libraries, and installation instructions.
-
-2. **Upload the basic Python implementation**  
-   - Provide a modular neuromorphic optical flow framework compatible with various velocity inference methods.
-
-3. **Upload datasets**  
-   - Include sample datasets for demonstration and benchmarking.
-
-4. **Create an online demo**  
-   - Develop a live, interactive interface illustrating key features of the neuromorphic optical flow approach.
+-   [x] **Set up the basic runtime environment**
+    -   [x] A `requirements.txt` file has been added.
+-   [x] **Upload the basic Python implementation**
+    -   [x] Modular scripts for segmentation, object tracking, and prediction have been provided.
+-   [x] **Upload datasets**
+    -   [x] Sample datasets for demonstration and benchmarking are included.
+-   [x] **Create an online demo**
+    -   [x] An interactive Google Colab notebook has been created.
 
 ---
 

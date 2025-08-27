@@ -1,0 +1,26 @@
+MEMSIZE=200
+
+EXTEND_HEIGHT_UPPER = 60
+EXTEND_HEIGHT_LOWER = 60
+EXTEND_WIDTH_LEFT = 60
+EXTEND_WIDTH_RIGHT = 60
+
+THRES = 114
+
+CONNECT  = 4
+
+FLAG = 1 （MERGE_FLAG = True）
+
+PADDING = 60
+
+farneback_params = {
+        'pyr_scale': 0.6,
+        'levels': 3,
+        'winsize': 3,
+        'iterations': 3,
+        'poly_n': 10,
+        'poly_sigma': 1.05,
+        'flags': 0
+    }
+
+Farneback, SEG and OB tasks, SEG_TH = 15

@@ -1,0 +1,27 @@
+MEMSIZE=80
+
+
+EXTEND_HEIGHT_UPPER = 20
+EXTEND_HEIGHT_LOWER = 20
+EXTEND_WIDTH_LEFT = 20
+EXTEND_WIDTH_RIGHT = 20
+
+THRES = 250
+
+CONNECT  = 4
+
+FLAG = 2
+
+PADDING = 20
+
+farneback_params = {
+        'pyr_scale': 0.5,
+        'levels': 3,
+        'winsize': 15,
+        'iterations': 3,
+        'poly_n': 5,
+        'poly_sigma': 1.2,
+        'flags': 0
+    }
+
+Farneback SEG OB, SEG_TH = 1

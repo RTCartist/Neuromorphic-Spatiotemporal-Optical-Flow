@@ -1,0 +1,7 @@
+opencv-python==4.9.0
+numpy==1.26.4
+scipy==1.13.0
+numba==0.59.1
+Pillow==10.3.0
+ultralytics==8.2.2
+scikit-image==0.23.2 
