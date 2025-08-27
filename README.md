@@ -90,7 +90,7 @@ Click the badge above to launch an interactive demo of our project in Google Col
 -   **`yolov8n.pt`**: Pre-trained YOLOv8 nano model weights.
 -   **`simulation/`**: MATLAB code to simulate the synapse array processing visual information.
 -   **`data/`**: Sample datasets for autodriving, drone flight, and grasping scenarios. More experimental data will be uploaded to Google Drive.
--   **`codebase/`**: (Coming soon) Neuromorphic optical flow code that utilizes FlowFormer, GMFLow, and RAFT for velocity inference.
+-   **`codebase/`**: Neuromorphic optical flow code that utilizes FlowFormer, GMFLow, and RAFT for velocity inference.
 -   **`rawresults/`**: Raw experimental results.
 
 ---
