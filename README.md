@@ -53,11 +53,22 @@ The main Python scripts can be run directly from the command line. Before runnin
 ```bash
 python optical_flow_seg.py
 ```
+
+We also provide examples of some deep learning-based optical flow work. Please follow [RAFT](https://github.com/princeton-vl/RAFT) and [FlowFomer](https://github.com/drinkingcoder/FlowFormer-Official)'s requirements build environment. 
+```bash
+python codebase/RAFT/raft_seg.py
+```
 You can modify the data paths and parameters at the top of each script to fit your needs.
 
 ### MATLAB Simulation
 
 The MATLAB scripts in the `simulation/` directory can be used to simulate the synaptic transistor array's response to visual information. You can adjust the `base_folder` path and other parameters within the scripts to match your data.
+
+### How to create ground truth mask yourself
+First, please follow [language sam](https://github.com/luca-medeiros/lang-segment-anything), install the required environment. Then you need to prepare a RGB image folder and a txt file that contain the names of RGB images. Run the following command. These argments are for your reference.
+```bash
+python codebase/lang-segment-anything/running_test.py --imglist 'data/grasp/imgs.txt' --rgbpath 'data/grasp/RGB' --savepath 'outputpath' --text_prompt 'pliers'
+```
 
 ---
 
