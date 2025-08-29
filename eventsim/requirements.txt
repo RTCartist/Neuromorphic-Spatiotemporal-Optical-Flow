@@ -1,0 +1,6 @@
+# Core dependencies for the simulation and visualization scripts
+numpy>=1.21
+h5py==3.6.0
+opencv-python>=4.5
+tqdm>=4.62
+matplotlib>=3.5 
