@@ -92,6 +92,7 @@ Click the badge above to launch an interactive demo of our project in Google Col
 -   **`data/`**: Sample datasets for autodriving, drone flight, and grasping scenarios. More experimental data will be uploaded to Google Drive.
 -   **`codebase/`**: Neuromorphic optical flow code that utilizes FlowFormer, GMFLow, and RAFT for velocity inference.
 -   **`rawresults/`**: Raw experimental results.
+-   **`eventsim/`**: Simulation code for processing event streams.
 
 ---
 
